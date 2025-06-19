@@ -1,0 +1,24 @@
+{
+  "name": "btu-site",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MusicDev33/btu-site.git"
+  },
+  "author": "Shelby McCowan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MusicDev33/btu-site/issues"
+  },
+  "homepage": "https://github.com/MusicDev33/btu-site#readme",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.1",
+    "sass": "^1.89.2"
+  }
+}

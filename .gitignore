@@ -1,0 +1,25 @@
+# .gitignore for 11ty
+
+# Output directory (default is _site, but check your .eleventy.js config)
+_site/
+dist/
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+
+# Optional: 11ty cache (if using incremental builds)
+.eleventycache/
