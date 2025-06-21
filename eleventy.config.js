@@ -2,8 +2,9 @@ import path from "node:path";
 import * as sass from "sass";
 
 export default function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("styles.css");
-  eleventyConfig.addTemplateFormats("scss");
+	// eleventyConfig.addPassthroughCopy("src/styles.css");
+	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addTemplateFormats("scss");
 
 	eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
@@ -14,7 +15,7 @@ export default function (eleventyConfig) {
 		compile: async function (inputContent, inputPath) {
 			let parsed = path.parse(inputPath);
 			// Don’t compile file names that start with an underscore
-			if(parsed.name.startsWith("_")) {
+			if (parsed.name.startsWith("_")) {
 				return;
 			}
 
@@ -33,4 +34,10 @@ export default function (eleventyConfig) {
 			};
 		},
 	});
+
+	return {
+		dir: {
+			input: "src",
+		}
+	}
 };

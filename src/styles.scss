@@ -1,0 +1,60 @@
+$test-var: #454545;
+
+// Vars
+:root {
+  --nav-bg: #444444;
+
+  --c-primary: #e0610b;
+
+  --radius-1: 12px;
+}
+
+body {
+  background: #fcfcfc !important;
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+// Navbar
+.btu-nav {
+  background: var(--nav-bg);
+  color: #fefefe;
+
+  .nav-item {
+    cursor: pointer;
+    font-size: 140%;
+    font-weight: 700;
+
+    transition: all 0.3s;
+  }
+
+  .nav-img {
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-1);
+    }
+  }
+}
+
+// Body
+.btu-hero {
+  border-radius: var(--radius-1);
+}
+
+.header-paragraph {
+  font-size: 110%;
+}
+
+// Components
+.btu-link {
+  color: var(--c-primary);
+  text-decoration: none !important;
+
+  border-bottom: 1px solid transparent;
+
+  transition: all 0.3s;
+
+  &:hover:not(:focus) {
+    border-color: var(--c-primary);
+  }
+}

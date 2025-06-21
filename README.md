@@ -1,1 +1,2 @@
-# BTU
+# BTU Style Guide
+Geometric
